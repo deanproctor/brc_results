@@ -1,0 +1,1221 @@
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.55.0>},
+                       {name,alarm_handler},
+                       {mfargs,{alarm_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,sasl_safe_sup}
+             started: [{pid,<0.56.0>},
+                       {name,overload},
+                       {mfargs,{overload,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.54.0>},
+                       {name,sasl_safe_sup},
+                       {mfargs,
+                           {supervisor,start_link,
+                               [{local,sasl_safe_sup},sasl,safe]}},
+                       {restart_type,permanent},
+                       {shutdown,infinity},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,sasl_sup}
+             started: [{pid,<0.57.0>},
+                       {name,release_handler},
+                       {mfargs,{release_handler,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+         application: sasl
+          started_at: nonode@nohost
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,crypto_sup}
+             started: [{pid,<0.63.0>},
+                       {name,crypto_server},
+                       {mfargs,{crypto_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+         application: crypto
+          started_at: nonode@nohost
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,folsom_sup}
+             started: [{pid,<0.73.0>},
+                       {name,folsom_sample_slide_sup},
+                       {mfargs,{folsom_sample_slide_sup,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,supervisor}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,folsom_sup}
+             started: [{pid,<0.74.0>},
+                       {name,folsom_meter_timer_server},
+                       {mfargs,{folsom_meter_timer_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,folsom_sup}
+             started: [{pid,<0.75.0>},
+                       {name,folsom_metrics_histogram_ets},
+                       {mfargs,{folsom_metrics_histogram_ets,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,2000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+         application: folsom
+          started_at: nonode@nohost
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.68.0>},
+                       {name,basho_bench_stats},
+                       {mfargs,{basho_bench_stats,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.77.0>},
+                       {name,basho_bench_worker_1},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_1,1]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,inet_gethost_native_sup}
+             started: [{pid,<0.84.0>},{mfa,{inet_gethost_native,init,[[]]}}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.83.0>},
+                       {name,inet_gethost_native_sup},
+                       {mfargs,{inet_gethost_native,start_link,[]}},
+                       {restart_type,temporary},
+                       {shutdown,1000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.81.0>},
+                       {name,basho_bench_worker_2},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_2,2]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.86.0>},
+                       {name,basho_bench_worker_3},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_3,3]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.89.0>},
+                       {name,basho_bench_worker_4},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_4,4]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:47 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.92.0>},
+                       {name,basho_bench_worker_5},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_5,5]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.95.0>},
+                       {name,basho_bench_worker_6},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_6,6]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.98.0>},
+                       {name,basho_bench_worker_7},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_7,7]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.101.0>},
+                       {name,basho_bench_worker_8},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_8,8]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.104.0>},
+                       {name,basho_bench_worker_9},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_9,9]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.107.0>},
+                       {name,basho_bench_worker_10},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_10,10]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.110.0>},
+                       {name,basho_bench_worker_11},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_11,11]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.113.0>},
+                       {name,basho_bench_worker_12},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_12,12]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.116.0>},
+                       {name,basho_bench_worker_13},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_13,13]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.119.0>},
+                       {name,basho_bench_worker_14},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_14,14]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.122.0>},
+                       {name,basho_bench_worker_15},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_15,15]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.125.0>},
+                       {name,basho_bench_worker_16},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_16,16]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.128.0>},
+                       {name,basho_bench_worker_17},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_17,17]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.131.0>},
+                       {name,basho_bench_worker_18},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_18,18]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.134.0>},
+                       {name,basho_bench_worker_19},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_19,19]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.137.0>},
+                       {name,basho_bench_worker_20},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_20,20]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.140.0>},
+                       {name,basho_bench_worker_21},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_21,21]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.143.0>},
+                       {name,basho_bench_worker_22},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_22,22]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.146.0>},
+                       {name,basho_bench_worker_23},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_23,23]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:48 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.149.0>},
+                       {name,basho_bench_worker_24},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_24,24]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.152.0>},
+                       {name,basho_bench_worker_25},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_25,25]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.155.0>},
+                       {name,basho_bench_worker_26},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_26,26]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.158.0>},
+                       {name,basho_bench_worker_27},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_27,27]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.161.0>},
+                       {name,basho_bench_worker_28},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_28,28]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.164.0>},
+                       {name,basho_bench_worker_29},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_29,29]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.167.0>},
+                       {name,basho_bench_worker_30},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_30,30]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.170.0>},
+                       {name,basho_bench_worker_31},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_31,31]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.173.0>},
+                       {name,basho_bench_worker_32},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_32,32]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.176.0>},
+                       {name,basho_bench_worker_33},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_33,33]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.179.0>},
+                       {name,basho_bench_worker_34},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_34,34]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.182.0>},
+                       {name,basho_bench_worker_35},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_35,35]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.185.0>},
+                       {name,basho_bench_worker_36},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_36,36]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.188.0>},
+                       {name,basho_bench_worker_37},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_37,37]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.191.0>},
+                       {name,basho_bench_worker_38},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_38,38]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.194.0>},
+                       {name,basho_bench_worker_39},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_39,39]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.197.0>},
+                       {name,basho_bench_worker_40},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_40,40]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.200.0>},
+                       {name,basho_bench_worker_41},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_41,41]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.203.0>},
+                       {name,basho_bench_worker_42},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_42,42]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:49 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.206.0>},
+                       {name,basho_bench_worker_43},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_43,43]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.209.0>},
+                       {name,basho_bench_worker_44},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_44,44]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.212.0>},
+                       {name,basho_bench_worker_45},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_45,45]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.215.0>},
+                       {name,basho_bench_worker_46},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_46,46]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.218.0>},
+                       {name,basho_bench_worker_47},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_47,47]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.221.0>},
+                       {name,basho_bench_worker_48},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_48,48]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.224.0>},
+                       {name,basho_bench_worker_49},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_49,49]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.227.0>},
+                       {name,basho_bench_worker_50},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_50,50]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.230.0>},
+                       {name,basho_bench_worker_51},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_51,51]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.233.0>},
+                       {name,basho_bench_worker_52},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_52,52]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.236.0>},
+                       {name,basho_bench_worker_53},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_53,53]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.239.0>},
+                       {name,basho_bench_worker_54},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_54,54]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.242.0>},
+                       {name,basho_bench_worker_55},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_55,55]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.245.0>},
+                       {name,basho_bench_worker_56},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_56,56]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.248.0>},
+                       {name,basho_bench_worker_57},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_57,57]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.251.0>},
+                       {name,basho_bench_worker_58},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_58,58]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.254.0>},
+                       {name,basho_bench_worker_59},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_59,59]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.257.0>},
+                       {name,basho_bench_worker_60},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_60,60]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.260.0>},
+                       {name,basho_bench_worker_61},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_61,61]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.263.0>},
+                       {name,basho_bench_worker_62},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_62,62]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:50 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.266.0>},
+                       {name,basho_bench_worker_63},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_63,63]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.269.0>},
+                       {name,basho_bench_worker_64},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_64,64]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.272.0>},
+                       {name,basho_bench_worker_65},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_65,65]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.275.0>},
+                       {name,basho_bench_worker_66},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_66,66]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.278.0>},
+                       {name,basho_bench_worker_67},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_67,67]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.281.0>},
+                       {name,basho_bench_worker_68},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_68,68]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.284.0>},
+                       {name,basho_bench_worker_69},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_69,69]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.287.0>},
+                       {name,basho_bench_worker_70},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_70,70]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.290.0>},
+                       {name,basho_bench_worker_71},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_71,71]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.293.0>},
+                       {name,basho_bench_worker_72},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_72,72]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.296.0>},
+                       {name,basho_bench_worker_73},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_73,73]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.299.0>},
+                       {name,basho_bench_worker_74},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_74,74]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.302.0>},
+                       {name,basho_bench_worker_75},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_75,75]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.305.0>},
+                       {name,basho_bench_worker_76},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_76,76]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.308.0>},
+                       {name,basho_bench_worker_77},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_77,77]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.311.0>},
+                       {name,basho_bench_worker_78},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_78,78]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.314.0>},
+                       {name,basho_bench_worker_79},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_79,79]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.317.0>},
+                       {name,basho_bench_worker_80},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_80,80]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.320.0>},
+                       {name,basho_bench_worker_81},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_81,81]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:51 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.323.0>},
+                       {name,basho_bench_worker_82},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_82,82]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.326.0>},
+                       {name,basho_bench_worker_83},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_83,83]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.329.0>},
+                       {name,basho_bench_worker_84},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_84,84]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.332.0>},
+                       {name,basho_bench_worker_85},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_85,85]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.335.0>},
+                       {name,basho_bench_worker_86},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_86,86]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.338.0>},
+                       {name,basho_bench_worker_87},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_87,87]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.341.0>},
+                       {name,basho_bench_worker_88},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_88,88]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.344.0>},
+                       {name,basho_bench_worker_89},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_89,89]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.347.0>},
+                       {name,basho_bench_worker_90},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_90,90]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.350.0>},
+                       {name,basho_bench_worker_91},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_91,91]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.353.0>},
+                       {name,basho_bench_worker_92},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_92,92]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.356.0>},
+                       {name,basho_bench_worker_93},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_93,93]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.359.0>},
+                       {name,basho_bench_worker_94},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_94,94]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.362.0>},
+                       {name,basho_bench_worker_95},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_95,95]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.365.0>},
+                       {name,basho_bench_worker_96},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_96,96]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.368.0>},
+                       {name,basho_bench_worker_97},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_97,97]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.371.0>},
+                       {name,basho_bench_worker_98},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_98,98]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.374.0>},
+                       {name,basho_bench_worker_99},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_99,99]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,basho_bench_sup}
+             started: [{pid,<0.377.0>},
+                       {name,basho_bench_worker_100},
+                       {mfargs,
+                           {basho_bench_worker,start_link,
+                               [basho_bench_worker_100,100]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+          supervisor: {local,kernel_safe_sup}
+             started: [{pid,<0.380.0>},
+                       {name,timer_server},
+                       {mfargs,{timer,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,1000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 13-Jun-2013::18:31:52 ===
+         application: basho_bench
+          started_at: nonode@nohost
