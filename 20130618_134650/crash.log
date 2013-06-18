@@ -1,0 +1,640 @@
+2013-06-18 13:48:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.22.0>,user_sup}
+     Context:    child_terminated
+     Reason:     epipe
+     Offender:   [{pid,<0.23.0>},{mod,user_sup}]
+
+2013-06-18 13:48:14 =ERROR REPORT====
+** Generic server <0.22.0> terminating 
+** Last message in was {'EXIT',<0.23.0>,epipe}
+** When Server state == {state,user_sup,undefined,<0.23.0>,{<0.22.0>,user_sup}}
+** Reason for termination == 
+** epipe
+2013-06-18 13:48:14 =CRASH REPORT====
+  crasher:
+    initial call: supervisor_bridge:user_sup/1
+    pid: <0.22.0>
+    registered_name: []
+    exception exit: {epipe,[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,747}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+    ancestors: [kernel_sup,<0.9.0>]
+    messages: []
+    links: [<0.10.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 24
+    reductions: 200
+  neighbours:
+2013-06-18 13:48:14 =SUPERVISOR REPORT====
+     Supervisor: {local,kernel_sup}
+     Context:    child_terminated
+     Reason:     epipe
+     Offender:   [{pid,<0.22.0>},{name,user},{mfargs,{user_sup,start,[]}},{restart_type,temporary},{shutdown,2000},{child_type,supervisor}]
+
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,3,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,["0",55,49]]},[["[","error","] "],["<0.22.0>",32],[83,117,112,101,114,118,105,115,111,114,32,"user_sup",32,104,97,100,32,99,104,105,108,100,32,"at module user_sup at <0.23.0>",32,101,120,105,116,32,119,105,116,104,32,114,101,97,115,111,110,32,"epipe",32,105,110,32,99,111,110,116,101,120,116,32,"child_terminated"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,["0",55,49]]," ",["[","error","] "],[83,117,112,101,114,118,105,115,111,114,32,"user_sup",32,104,97,100,32,99,104,105,108,100,32,"at module user_sup at <0.23.0>",32,101,120,105,116,32,119,105,116,104,32,114,101,97,115,111,110,32,"epipe",32,105,110,32,99,111,110,116,101,120,116,32,"child_terminated"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,488}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"212"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"212"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"254"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"254"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"312"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"312"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"426"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"426"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"465"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"465"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"507"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"507"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"549"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"549"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"615"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"615"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"678"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"678"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"728"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"728"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"778"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"778"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"844"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"844"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"911"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"911"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:14 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"14",46,"965"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"14",46,"965"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,["0",49,53]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,["0",49,53]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,["0",56,50]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,["0",56,50]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"144"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"144"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"182"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"182"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"232"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"232"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"299"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"299"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"349"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"349"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"411"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"411"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"444"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"444"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"494"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"494"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"527"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"527"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"590"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"590"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"657"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"657"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"690"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"690"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"724"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"724"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"787"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"787"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"845"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"845"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"878"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"878"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"911"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"911"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:15 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"15",46,"979"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"15",46,"979"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,["0",52,48]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,["0",52,48]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,["0",56,49]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,["0",56,49]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"124"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"124"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"165"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"165"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"240"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"240"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"273"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"273"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"306"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"306"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"340"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"340"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"413"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"413"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"446"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"446"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"488"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"488"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"521"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"521"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"597"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"597"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"631"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"631"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"665"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"665"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"698"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"698"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"756"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"756"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"835"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"835"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"877"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"877"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"918"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"918"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:16 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"16",46,"968"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"16",46,"968"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,["0",51,49]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,["0",51,49]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,["0",54,53]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,["0",54,53]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,["0",57,57]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,["0",57,57]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"149"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"149"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"207"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"207"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"240"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"240"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"298"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"298"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"340"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"340"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"381"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"381"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"439"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"439"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"498"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"498"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"539"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"539"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"581"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"581"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"649"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"649"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"698"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"698"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"731"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"731"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"764"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"764"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"824"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"824"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"881"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"881"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"922"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"922"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"956"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"956"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:17 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"17",46,"989"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"17",46,"989"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,["0",54,52]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,["0",54,52]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"106"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"106"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"139"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"139"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"181"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"181"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"250"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"250"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"289"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"289"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"331"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"331"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"372"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"372"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"443"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"443"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"481"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"481"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"514"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"514"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"547"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"547"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"606"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"606"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"664"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"664"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"697"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"697"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"731"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"731"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"814"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"814"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"868"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"868"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"905"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"905"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:18 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"18",46,"964"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"18",46,"964"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:19 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"19",46,["00",54]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"19",46,["00",54]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:19 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"19",46,["0",54,57]]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"19",46,["0",54,57]]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
+2013-06-18 13:48:19 =ERROR REPORT====
+** gen_event handler lager_console_backend crashed.
+** Was installed in lager_event
+** Last event was: {log,7,{["2013",45,["0",54],45,"18"],["13",58,"48",58,"19",46,"105"]},[["[","debug","] "],["<0.42.0>",32],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"]]}
+** When handler state == {state,7,false}
+** Reason == {badarg,[{io,put_chars,[user,unicode,[["13",58,"48",58,"19",46,"105"]," ",["[","debug","] "],[76,97,103,101,114,32,105,110,115,116,97,108,108,101,100,32,104,97,110,100,108,101,114,32,"lager_console_backend",32,105,110,116,111,32,"lager_event"],"\r\n"]],[]},{lager_console_backend,handle_event,2,[{file,"src/lager_console_backend.erl"},{line,87}]},{gen_event,server_update,4,[{file,"gen_event.erl"},{line,504}]},{gen_event,server_notify,4,[{file,"gen_event.erl"},{line,486}]},{gen_event,handle_msg,5,[{file,"gen_event.erl"},{line,251}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]}
